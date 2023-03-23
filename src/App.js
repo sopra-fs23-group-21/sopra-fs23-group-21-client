@@ -6,6 +6,7 @@ import Header from "components/views/Header";
  * React Template by Lucas Pelloni
  * Overhauled by Kyrill Hux
  */
+
 const App = () => {
   return (
     <div>
