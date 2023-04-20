@@ -1,10 +1,12 @@
 import {ReactNode} from "react";
 
+//properties of cards
 declare interface PokerProps{
     value:number;
     type:number;
 }
 
+//properties of gamecontext
 declare interface GameContextProps{
     userList?:Array<AdminProps>;
     //地主牌
@@ -30,17 +32,21 @@ declare interface GameContextProps{
     code:string;
 }
 
+//properties of result
 declare interface ResultProps<T> {
     status:number;
     data:T;
     msg:string;
 }
 
+//properties of card combination
 declare interface PokerCombinationProps{
     userId:number;
     card:Array<PokerProps>;
 }
 
+
+//
 declare interface AdminProps{
     id:number;
     name:string;
@@ -66,7 +72,7 @@ declare interface ModalFormProps{
 }
 
 
-declare interface StepsFromProps{
+declare interface StepsFormProps{
     fields:any;
     url:string;
     children:ReactNode;
