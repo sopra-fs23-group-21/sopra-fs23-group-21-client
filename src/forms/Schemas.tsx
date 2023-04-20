@@ -34,10 +34,10 @@ const defaultAnswer = answerSchema.getDefaultFromShape()
 
 export const baseSchema = object({
     name: string().ensure().required(),
-    username: string().ensure().required("用户名不能为空"),
+    username: string().ensure().required("The username cannot be empty."),
     courseName: string().ensure().required(),
     university: string().ensure().required(),
-    roomId: number().min(0).max(7).required("房间号不能为空"),
+    roomId: number().min(0).max(7).required("The Room Number cannot be empty."),
     email: string().ensure().email('Not a valid email address'),
     password: string().ensure().required().min(6).max(20)
         .matches(/[a-zA-Z]/, 'Enter at least one character')
