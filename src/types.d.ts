@@ -1,4 +1,3 @@
-
 declare interface PokerProps{
   value: number,
   type: number
@@ -26,6 +25,8 @@ declare interface GameContextProps{
  //当前出牌编号
  now:number;
  winner?:number;
+
+ code:string;
 
 }
 
