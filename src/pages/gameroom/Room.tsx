@@ -115,8 +115,8 @@ export default function Room() {
 
     useEffect(() => {
 
-        // const ws = new WebSocket(`wss:/doudizhu-server.oa.r.appspot.com/ws/ddz/sync/${roomId}/${adminData?.token}`);
-         const ws = new WebSocket(`ws:/doudizhu-server.oa.r.appspot.com/ws/ddz/sync/${roomId}/${adminData?.token}`);
+        const ws = new WebSocket(`ws:/localhost:8080/ws/ddz/sync/${roomId}/${adminData?.token}`);
+        //const ws = new WebSocket(`ws:/doudizhu-server.oa.r.appspot.com/ws/ddz/sync/${roomId}/${adminData?.token}`);
 
         ws.onopen = () => {
             console.log('WebSocket connected');

@@ -75,7 +75,8 @@ export default function Overview() {
 
     useEffect(() => {
 
-        const ws = new WebSocket(`wss:/doudizhu-server.oa.r.appspot.com/ws/room/sync/${adminData?.token}`);
+        //const ws = new WebSocket(`ws:/doudizhu-server.oa.r.appspot.com/ws/room/sync/${adminData?.token}`);
+        const ws = new WebSocket(`ws:/localhost:8080/ws/room/sync/${adminData?.token}`);
 
         ws.onopen = () => {
             console.log('WebSocket connected');
