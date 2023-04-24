@@ -117,7 +117,7 @@ export default function Room() {
         
         const apiUrl = process.env.REACT_SOCKET_API_URL;
         //const ws = new WebSocket(`ws:/doudizhu-server.oa.r.appspot.com/ws/room/sync/${adminData?.token}`);
-        const ws = new WebSocket(`${apiUrl}/ws/room/sync/${adminData?.token}`);
+        const ws = new WebSocket(`${apiUrl}/ws/ddz/sync/${adminData?.token}`);
 
         ws.onopen = () => {
             console.log('WebSocket connected');
