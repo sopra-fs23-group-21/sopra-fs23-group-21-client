@@ -43,7 +43,7 @@
     "start": "serve -s build",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
     "build:prod": "CI=false && REACT_APP_ENV=production react-scripts build"
   },
   "eslintConfig": {
