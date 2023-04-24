@@ -1,5 +1,5 @@
 # https://cloud.google.com/appengine/docs/flexible/reference/app-yaml?tab=node.js#top
-runtime: nodejs18
+runtime: nodejs14
 
 handlers:
   - url: /static/js/(.*)
