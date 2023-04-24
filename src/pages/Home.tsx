@@ -28,12 +28,12 @@ export default function Home() {
                     {/*</Stack>*/}
                 </Flex>
                 <ButtonGroup>
-                    <Button variant='round-outline' as={Link} to='login'>登录</Button>
-                    <Button variant='round' as={Link} to='register'>注册</Button>
+                    <Button variant='round-outline' as={Link} to='login'>登录 Login</Button>
+                    <Button variant='round' as={Link} to='register'>注册 Register</Button>
                 </ButtonGroup>
             </Flex>
             <VStack minH='50vh' maxH='100vh' justify='space-evenly'>
-                <Button variant='round' minW='xs' as={Link} to='login'>开始游戏</Button>
+                <Button variant='round' minW='xs' as={Link} to='login'>开始游戏 Start the game</Button>
             </VStack>
             <LineBackground transform='scaleX(-1) rotate(90deg)' />
         </Stack>
