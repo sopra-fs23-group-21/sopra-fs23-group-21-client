@@ -27,7 +27,7 @@ export default function ResetPassword() {
     return (
         <VStack minH='100vh' minW='fit-content' p={10} spacing={8}>
             <VStack>
-                <Heading>Hi! You are almost able to access group matcher!</Heading>
+                <Heading>Hi! You are almost able to access DOU DI ZHU!</Heading>
                 <Text color='gray.600' textAlign='center' lineHeight={1.5} w='lg'>
                     In order to gain full access to your account, we need you to complete your registration by providing a password.
                 </Text>

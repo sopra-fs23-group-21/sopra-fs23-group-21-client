@@ -8,7 +8,7 @@ export default function VerifyConfirmation() {
     return (
         <VStack minH='100vh' minW='fit-content' p={4} spacing={12} position='relative' justify='center'>
             <VStack>
-                <Heading>Thank you for registering on group matcher!</Heading>
+                <Heading>Thank you for registering on DOU DI ZHU!</Heading>
                 <Text textAlign='center' w='md' color='gray.600'>Your account has been successfully created.</Text>
             </VStack>
             <Container gap={6} w='lg' centerContent bg='white' boxShadow='lg' rounded='3xl' borderWidth={1} p={10}>

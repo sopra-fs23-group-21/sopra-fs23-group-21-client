@@ -8,6 +8,6 @@ export function SidebarButton(props: { to: string, isEnd?: boolean, icon: IconTy
     const targetPath = useResolvedPath(props.to)
     const currentPath = useMatch({ path: targetPath.pathname, end: props.isEnd })
     return <Button as={Link} to={targetPath.pathname} leftIcon={<props.icon fontSize='1.2rem' />}
-    justifyContent='start' w='full' iconSpacing={3} _active={{ bg: 'gray.100' }}
-    isActive={!!currentPath}>{ !props.tagName ? capitalize(props.to) : props.tagName   }</Button>
+                   justifyContent='start' w='full' iconSpacing={3} _active={{ bg: 'gray.100' }}
+                   isActive={!!currentPath}>{ !props.tagName ? capitalize(props.to) : props.tagName   }</Button>
 }

@@ -16,6 +16,8 @@ Next, there are two other technologies that you should look at:
 ## Prerequisites and Installation
 For your local development environment, you will need Node.js. You can download it [here](https://nodejs.org). All other dependencies, including React, get installed with:
 
+```npm install primeicons --save```
+
 ```npm install```
 
 Run this command before you start your application for the first time. Next, you can start the app with:
