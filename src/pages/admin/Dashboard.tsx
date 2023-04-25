@@ -41,12 +41,12 @@ export default function Dashboard() {
                     <Heading p={3} fontSize='lg'>Hi, {adminData.name}</Heading>
                 </Box>
                 <Stack as={ButtonGroup} spacing={6} variant='ghost' minW='12vw' colorScheme='gray' flexGrow={1}>
-                    <SidebarButton tagName='游戏' to='' icon={FiGrid} />
+                    <SidebarButton tagName='游戏Game' to='' icon={FiGrid} />
                     {/*<SidebarButton to='matchers' isEnd={false} icon={FaRegClipboard} />*/}
-                    <SidebarButton to='profile' tagName='修改个人资料' icon={BiUser} />
+                    <SidebarButton to='profile' tagName='修改个人资料Modify profile' icon={BiUser} />
                 </Stack>
                 <Divider borderColor='gray.300' />
-                <Button onClick={onLogout} variant='ghost' colorScheme='gray' leftIcon={<FiLogOut />}>Logout</Button>
+                <Button onClick={onLogout} variant='ghost' colorScheme='gray' leftIcon={<FiLogOut />}>退出Logout</Button>
                 <LineBackground boxSize='sm' viewBox='-200 900 1100 1000' />
             </Stack>
             <Outlet context={adminData} />
