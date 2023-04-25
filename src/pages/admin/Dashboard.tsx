@@ -4,11 +4,9 @@ import { parseISO } from 'date-fns'
 import React from 'react'
 import { AiOutlineUser } from 'react-icons/ai'
 import { BiUser } from 'react-icons/bi'
-import { FaRegClipboard } from 'react-icons/fa'
 import { FiGrid, FiLogOut } from 'react-icons/fi'
 import { Navigate, Outlet } from 'react-router-dom'
-import { StompSessionProvider } from 'react-stomp-hooks'
-import { CachePolicies, Interceptors, Provider } from 'use-http'
+import { Interceptors } from 'use-http'
 import useLocalStorage from 'use-local-storage'
 import { LineBackground } from '../../components/Backgrounds'
 import { SidebarButton } from '../../components/Buttons'
@@ -42,8 +40,7 @@ export default function Dashboard() {
                 </Box>
                 <Stack as={ButtonGroup} spacing={6} variant='ghost' minW='12vw' colorScheme='gray' flexGrow={1}>
                     <SidebarButton tagName='游戏Game' to='' icon={FiGrid} />
-                    {/*<SidebarButton to='matchers' isEnd={false} icon={FaRegClipboard} />*/}
-                    <SidebarButton to='profile' tagName='修改个人资料Modify profile' icon={BiUser} />
+                    <SidebarButton to='profile' tagName='修改个人资料Modify Profile' icon={BiUser} />
                 </Stack>
                 <Divider borderColor='gray.300' />
                 <Button onClick={onLogout} variant='ghost' colorScheme='gray' leftIcon={<FiLogOut />}>退出Logout</Button>
