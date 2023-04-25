@@ -13,7 +13,7 @@ export default function VerifyConfirmation() {
             </VStack>
             <Container gap={6} w='lg' centerContent bg='white' boxShadow='lg' rounded='3xl' borderWidth={1} p={10}>
                 <Icon as={CheckmarkIllustration} boxSize='10rem' />
-                <Heading fontSize='lg'>Before you can proceed, please verify your email.</Heading>
+                <Heading fontSize='lg'>Now you can proceed to login. </Heading>
                 <Button as={Link} to='/login' variant='link' size='sm'>to Login</Button>
             </Container>
         </VStack>
