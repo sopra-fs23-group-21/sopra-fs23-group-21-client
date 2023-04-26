@@ -120,8 +120,8 @@ export default function Room() {
         //const ws = new WebSocket(`${apiUrl}/ws/ddz/sync/${adminData?.token}`);
         //本地跑
         //const ws = new WebSocket(`ws:/localhost:8080/ws/ddz/sync/${roomId}/${adminData?.token}`);
-        //云上跑
-        const ws = new WebSocket(`wss:/heroic-idea-381412.oa.r.appspot.com/ws/ddz/sync/${adminData?.token}`);
+        //云上跑 sopra-fs23-group-21-server-new.oa.r.appspot.com
+        const ws = new WebSocket(`wss:/sopra-fs23-group-21-server-new.oa.r.appspot.com/ws/ddz/sync/${roomId}/${adminData?.token}`);
 
         ws.onopen = () => {
             console.log('WebSocket connected');
