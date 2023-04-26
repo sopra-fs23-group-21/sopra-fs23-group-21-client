@@ -92,7 +92,7 @@ export default function Room() {
             data.userList[data.now].status='on';
         }
         setPokers(data.pokers)
-        setResult(data.winner==undefined ?undefined:(data.winner==data.start?'地主胜利':'农民胜利'))
+        setResult(data.winner==undefined ?undefined:(data.winner==data.start?'Landlord Win!':'Famers Win!'))
         setIsPay(data.now === place)
         setRoomStatus(data.gameStatus)
         setMy(data.userList[place])
