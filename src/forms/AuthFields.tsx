@@ -1,6 +1,6 @@
 import { Icon } from '@chakra-ui/icons'
 import {
-  FormControl, FormErrorMessage, FormLabel, IconButton, Input, InputGroup, InputRightElement, useBoolean
+  FormControl, FormErrorMessage, FormLabel, IconButton, Input, InputGroup, InputLeftElement,InputRightElement, useBoolean
 } from '@chakra-ui/react'
 import { Field, FieldProps } from 'formik'
 import { startCase } from 'lodash'
@@ -15,9 +15,9 @@ export function NameField({ fieldName,fileTag ,icon  }: { fileTag?:string,fieldN
           <FormControl isInvalid={fieldProps.meta.value && fieldProps.meta.error}>
             <FormLabel>{ fileTag || startCase(fieldName)}</FormLabel>
             <InputGroup>
-              <InputRightElement>
-                <Icon as={icon} boxSize={5} color='gray.500' />
-              </InputRightElement>
+              <InputLeftElement>
+                <Icon as={icon} boxSize={5} color='#C95058' />
+              </InputLeftElement>
               <Input {...fieldProps.field} placeholder={ fileTag || 'name' } />
             </InputGroup>
             <FormErrorMessage>{fieldProps.meta.value && fieldProps.meta.error}</FormErrorMessage>
@@ -48,10 +48,10 @@ export function PasswordField({ repeat }: { repeat?: boolean }) {
           <FormControl isInvalid={fieldProps.meta.value && fieldProps.meta.error}>
             <FormLabel>{repeat && 'Repeat '}Password</FormLabel>
             <InputGroup>
-              <InputRightElement>
+              <InputLeftElement>
                 <IconButton icon={showPassword ? <FaEye /> : <FaEyeSlash />} variant='ghost' isRound
-                            aria-label='toggle show password' cursor='pointer' onClick={toggle}/>
-              </InputRightElement>
+                            aria-label='toggle show password' cursor='pointer' onClick={toggle} color='#C95058'/>
+              </InputLeftElement>
               <Input {...fieldProps.field} placeholder={(repeat ? 'Repeat ' : '')+'Password'}
                      type={showPassword ? 'text' : 'password'} autoComplete='new-password' />
             </InputGroup>
