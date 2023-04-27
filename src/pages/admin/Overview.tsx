@@ -152,8 +152,8 @@ export default function Overview() {
                 : "already full"}
             </Button>
           ))}
-          <Button onClick={createGameFun} variant="dashed" as={Link} to="">
-            <MdAddCircleOutline fontSize="1.5rem" />
+          <Button onClick={createGameFun} variant="dashed" as={Link} to="" color="gray.200" bgColor="#AC6A99">
+            <MdAddCircleOutline fontSize="1.5rem"/>
             create a game
           </Button>
         </HStack>
