@@ -35,7 +35,7 @@ The most special card combination is the pair of jokers. The red joker and black
 <br/>
 7. For more details on "Landlord," you can search for it on Wikipedia at https://en.wikipedia.org/wiki/Dou_dizhu.<br/>
 <br/>
-8. Finally, when the game finishes, everyone need to click on "Quit Room" - This is very important!!! By exiting the room normally, the room number will not be saved on the homepage, which could affect other students' testing. Thank you, everyone.<br/>
+8. Finally, when the game finishes, everyone need to click on "Quit Room" - This is very important!!!
 
         </Text>
       </Box>
