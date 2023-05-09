@@ -223,7 +223,7 @@ export default function Room() {
             alignItems="center"
           >
             {result && (
-              <Text textAlign="center" w="md" color="gray.600">
+              <Text textAlign="center" w="md" color="blue.600">
                 `{result}`
               </Text>
             )}

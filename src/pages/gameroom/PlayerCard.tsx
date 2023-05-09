@@ -22,7 +22,7 @@ export default function PlayerCard({user}:{user:AdminProps}){
                 <Text fontSize="xl" fontWeight="bold">
                     {user.name}
                 </Text>
-                <Text fontSize="md">
+                <Text fontSize="md" color="blue">
                     Remaining Card: {user.handCard?.length}
                 </Text>
                 {
