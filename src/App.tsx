@@ -3,6 +3,7 @@ import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
 import "@fontsource/dm-sans/700.css";
 import "assets/PrimeReactTheme.css";
+import Rules from "pages/Rules";
 import "primeicons/primeicons.css";
 import "primereact/resources/primereact.min.css";
 import React from "react";
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/verify" element={<VerifyConfirmation />} />
+            <Route path="/rules" element={<Rules />} />
             <Route path="/room/:roomId" element={<Room />} />
             <Route path="/reset/:adminId" element={<ResetPassword />} />
             <Route path="/dashboard" element={<Dashboard />}>

@@ -21,6 +21,10 @@ export default function Home() {
         <Button variant="round" minW="xs" as={Link} to="login" bg="#AC6A99">
           开始游戏 Start the game
         </Button>
+        <Button variant="round" minW="xs" as={Link} to="rules" bg="#AC6A99">
+          游戏规则 Game rules
+        </Button>
+
         {/* <ButtonGroup> */}
         <Button variant="round" minW="xs" as={Link} to="login">
           登录 Login
