@@ -6,7 +6,9 @@ import {IncomingOptions  } from "use-http";
 import {CachePolicies} from "use-http/dist/cjs/types";
 import useApi from "../../components/useApi";
 
-export default function  Poker({roomStatus,roomId,user,isPay}:{roomStatus:number,roomId:string|undefined,user:AdminProps|undefined,isPay:boolean}){
+
+export default function  Poker({roomStatus,roomId,user,isPay,numUser}:{roomStatus:number,roomId:string|undefined,user:AdminProps|undefined,isPay:boolean,numUser:number}){
+
     const [adminData] = useLocalStorage<AdminProps | undefined>('adminData', undefined)
     const options: IncomingOptions = {
         headers: {
@@ -92,6 +94,19 @@ export default function  Poker({roomStatus,roomId,user,isPay}:{roomStatus:number
         postContend(new URLSearchParams(`?roomCode=${roomId}&isContend=${isContend}`)).then(data=>{})
     }
 
+//准备 Ready? 不可用设置，房间内有3个用户时才可用
+    const handleReadyClick = () => {
+        // const readyButtonDisabled = numUser == 3;
+        if (numUser == 3){
+            handleContinue();
+        }
+
+    };
+
+
+    // console.log(readyButtonDisabled,numUser)
+
+
     const cardWidth = 122;
     const cardHeight = 180; // 设置牌的高度
     const cardOverlap = 50;
@@ -101,7 +116,10 @@ export default function  Poker({roomStatus,roomId,user,isPay}:{roomStatus:number
         <ButtonGroup>
             {user?.isContinue ? <Text fontSize="md">已准备 Ready</Text> :
                 <>
-                    <Button onClick={() => handleContinue()}>准备 Ready?</Button>
+                    <Button onClick={handleReadyClick} >
+                        准备 Ready?
+                    </Button>
+                    {/*<Button onClick={() => handleContinue()}>准备 Ready?</Button>*/}
                     <Button onClick={() => handleQuit()}>退出房间 Exit the room</Button>
                 </>
             }
