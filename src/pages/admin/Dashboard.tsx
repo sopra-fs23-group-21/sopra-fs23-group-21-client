@@ -65,10 +65,10 @@ export default function Dashboard() {
           colorScheme="gray"
           flexGrow={1}
         >
-          <SidebarButton tagName="游戏Game" to="" icon={FiGrid} />
+          <SidebarButton tagName="游戏 Game" to="" icon={FiGrid} />
           <SidebarButton
             to="profile"
-            tagName="修改个人资料Modify Profile"
+            tagName="修改个人资料 Modify Profile"
             icon={BiUser}
           />
         </Stack>
@@ -79,7 +79,7 @@ export default function Dashboard() {
           colorScheme="gray"
           leftIcon={<FiLogOut />}
         >
-          退出Logout
+          退出 Logout
         </Button>
         <LineBackground boxSize="sm" viewBox="-200 900 1100 1000" />
       </Stack>
