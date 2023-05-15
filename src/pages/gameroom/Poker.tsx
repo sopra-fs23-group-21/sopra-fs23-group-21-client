@@ -116,7 +116,9 @@ export default function  Poker({roomStatus,roomId,user,isPay,numUser}:{roomStatu
         <ButtonGroup>
             {user?.isContinue ? <Text fontSize="md">已准备 Ready</Text> :
                 <>
-                    <Button onClick={handleReadyClick} >
+                    <Button
+                        disabled={numUser != 3}
+                        onClick={handleReadyClick} >
                         准备 Ready?
                     </Button>
                     {/*<Button onClick={() => handleContinue()}>准备 Ready?</Button>*/}

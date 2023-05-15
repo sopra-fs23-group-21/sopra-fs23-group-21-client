@@ -18,11 +18,12 @@ export default function PlayerCard({user}:{user:AdminProps}){
                 boxShadow="base"
                 textAlign="center"
                 width="100%"
+                bg="rgba(0, 0, 0, 0.8)"
             >
-                <Text fontSize="xl" fontWeight="bold">
+                <Text fontSize="xl" fontWeight="bold" color="white">
                     {user.name}
                 </Text>
-                <Text fontSize="md" color="blue">
+                <Text fontSize="md" color="white">
                     Remaining Card: {user.handCard?.length}
                 </Text>
                 {
@@ -31,7 +32,7 @@ export default function PlayerCard({user}:{user:AdminProps}){
                         Already Ready!
                     </Text>
                 }
-                <Text fontSize="md">
+                <Text fontSize="md" color="white">
                     {'on' == user.status ? 'Waiting......' : '' }
                 </Text>
             </Box>
