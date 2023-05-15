@@ -1,5 +1,5 @@
 import {
-    Button, Flex, HStack, Modal, ModalContent, Stack, useToast,
+    Button, Flex, Grid, HStack, Modal, ModalContent, Stack, useToast,
     VStack
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
@@ -132,34 +132,42 @@ export default function Overview() {
       backgroundSize="cover"
       bgImage="url('/image/05b6a71c48ac19ba9097a5bb44daa7e1.png')"
     >
-      <Stack flexGrow={1} spacing={4}>
-        <HStack spacing={5}>
-          {rooms?.map((room, index) => (
-            <Button
-              variant="dashed"
-              color="gray.200"
-              bgColor="#AC6A99"
-              onClick={() =>
-                room.userList && room.userList?.length < 3
-                  ? joinGame(room.code)
-                  : false
-              }
-              as={Link}
-              to=""
-            >
-              room code：{room.code}
-              <MdAddCircleOutline fontSize="1.5rem" />
-              {room.userList && room.userList?.length < 3
-                ? "joined the room"
-                : "already full"}
-            </Button>
-          ))}
-          <Button onClick={createGameFun} variant="dashed" as={Link} to="" color="gray.200" bgColor="#AC6A99">
-            <MdAddCircleOutline fontSize="1.5rem"/>
-            create a game
-          </Button>
-        </HStack>
-      </Stack>
+      <Grid templateColumns="repeat(4, 1fr)" gap={4}>
+  {rooms?.map((room, index) => (
+    <Button
+      key={index}
+      variant="dashed"
+      color="gray.200"
+      bgColor="#AC6A99"
+      onClick={() =>
+        room.userList && room.userList?.length < 3
+          ? joinGame(room.code)
+          : false
+      }
+      as={Link}
+      to=""
+    >
+      room code: {room.code}
+      <MdAddCircleOutline fontSize="1.5rem" />
+      {room.userList && room.userList?.length < 3
+        ? "joined the room"
+        : "already full"}
+    </Button>
+  ))}
+  <Button
+    onClick={createGameFun}
+    variant="dashed"
+    as={Link}
+    to=""
+    color="gray.200"
+    bgColor="#AC6A99"
+    gridColumn="span 4"
+  >
+    <MdAddCircleOutline fontSize="1.5rem" />
+    create a game
+  </Button>
+</Grid>
+
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <ModalContent>
           <VStack spacing={8}>
