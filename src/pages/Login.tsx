@@ -47,6 +47,7 @@ export default function Login() {
           <VStack as={Form} spacing={8}>
             <VStack
               bg="#AC6A99"
+              opacity={0.95}
               boxShadow="2xl"
               rounded="xl"
               borderWidth={2}

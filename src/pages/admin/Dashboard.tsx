@@ -49,7 +49,9 @@ export default function Dashboard() {
         spacing={8}
         position="relative"
         borderRightWidth={1}
+        opacity={0.9}
         bg="#AC6A99"
+
       >
         <Box>
           {/* <Icon boxSize='5rem' rounded='full' p={3} bg='gray.50' as={AiOutlineUser} /> */}

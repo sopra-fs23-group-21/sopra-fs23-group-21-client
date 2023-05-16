@@ -18,19 +18,19 @@ export default function Home() {
         <Flex align="end" gap={2} flexGrow={1}></Flex>
       </Flex>
       <VStack minH="50vh" maxH="100vh" justify="space-evenly">
-        <Button variant="round" minW="xs" as={Link} to="login" bg="#AC6A99">
+        <Button variant="round" minW="xs" as={Link} to="login" bg="rgba(172,106,153,0.9)">
           开始游戏 Start the game
         </Button>
-        <Button variant="round" minW="xs" as={Link} to="rules" bg="#AC6A99">
+        <Button variant="round" minW="xs" as={Link} to="rules" bg="rgba(172, 106, 153, 0.9)" color="#FFFFFF">
           游戏规则 Game rules
         </Button>
 
         {/* <ButtonGroup> */}
-        <Button variant="round" minW="xs" as={Link} to="login">
-          登录 Login
+        <Button variant="round" minW="xs" as={Link} to="login" opacity={0.9}>
+          登录&nbsp;  Login
         </Button>
-        <Button variant="round" minW="xs" as={Link} to="register">
-          注册 Register
+        <Button variant="round" minW="xs" as={Link} to="register" opacity={0.9}>
+          注册&nbsp;  Register
         </Button>
         {/* </ButtonGroup> */}
       </VStack>

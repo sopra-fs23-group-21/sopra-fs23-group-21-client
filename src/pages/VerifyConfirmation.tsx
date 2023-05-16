@@ -23,6 +23,7 @@ export default function VerifyConfirmation() {
         w="lg"
         centerContent
         bg="#AC6A99"
+        opacity={0.95}
         boxShadow="lg"
         rounded="xl"
         borderWidth={1}
