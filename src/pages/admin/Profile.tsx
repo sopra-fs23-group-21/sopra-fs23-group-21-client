@@ -12,6 +12,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { useFetch } from "use-http";
 import useLocalStorage from "use-local-storage";
 import { NameField, PasswordField } from "../../forms/AuthFields";
+import useApi from "../../components/useApi";
 
 export default function Profile() {
   const [adminData, setAdminData] = useLocalStorage<AdminProps | undefined>(
@@ -23,20 +24,32 @@ export default function Profile() {
     password: "",
     repeatPassword: "",
   };
-  const { put, response } = useFetch("/user/updateDetail");
+  const { put, response } = useApi("/user/updateDetail");
   const toast = useToast();
 
   const editProfile = (values: FormikValues) =>
-    put(values).then((data) => {
+
+  {
+      if(values.password == null || values.username ==null || values.name ==null){
+          toast({ title: "the name, user name and password can not be empty",
+              status: 'error',onCloseComplete: () => window.location.reload()
+          })
+          return
+      }
+     put(values).then((data) => {
       if (response.ok) {
         toast({
           title: "Profile updated successfully!",
           status: "success",
           duration: 3000,
-          onCloseComplete: () => window.location.reload(),
+          onCloseComplete: () => {
+              setAdminData(data.data)
+              window.location.reload()},
         });
       } else toast({ title: data.msg, status: "error" });
     });
+    }
+
 
   return (
     <VStack flexGrow={1} p={12} spacing={5}>
