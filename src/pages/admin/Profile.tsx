@@ -35,7 +35,7 @@ export default function Profile() {
           duration: 3000,
           onCloseComplete: () => window.location.reload(),
         });
-      } else toast({ title: data.message, status: "error" });
+      } else toast({ title: data.msg, status: "error" });
     });
 
   return (
