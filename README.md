@@ -21,8 +21,8 @@ Potential improvements or extensions may include:
 
 ## Learn More
 To learn React, check out the [React documentation](https://reactjs.org/).
-To learn XXX, check out the []()
-
+To learn Chakra UI, check out the [Chakra UI](https://chakra-ui.com/)
+To learn GitHub Actions, check out the [GitHub Actions](https://docs.github.com/en/actions)
 
 ## Authors & Acknowledgement
 > Jing Cao, Weimin Yang, Zhi Wang, Xiong Li
