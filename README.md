@@ -40,8 +40,9 @@ In this group project, we hope to develop a website to let users play the Dou Di
 
 ## Roadmap
 Potential improvements or extensions may include:
-- 
-
+- In the game room, users can change the music and choose their favorite music as the background music
+- The user can log in with the email. After passing the email verification, if the password is forgotten, the user can retrieve the password or change the password through the email.
+- The game ranking feature can be added
 
 ## Learn More
 - To learn React, check out the [React documentation](https://reactjs.org/).
