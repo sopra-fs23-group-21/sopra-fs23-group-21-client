@@ -2,6 +2,11 @@
 ## Introduction
 
 ## Technologies
+- React: CSS, Typescript, HTML
+- Chakra UI
+- GitHub Actions
+- REST API
+- HTML5 Audio API
 
 ## High-level Components
 
