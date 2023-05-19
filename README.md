@@ -1,4 +1,27 @@
-# SoPra FS23 - Client Template with build pack
+# SoPra FS23 - Group 21 Client 
+## Introduction
+
+## Technologies
+
+## High-level Components
+
+## Launch & Development
+
+## Illustrations
+
+## Roadmap
+
+## Learn More
+
+## Authors & Acknowledgement
+
+## License
+Licensed under Apache License Version 2.0
+- See (License)[]
+
+
+
+
 
 ## Getting started
 
