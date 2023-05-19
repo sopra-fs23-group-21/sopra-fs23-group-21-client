@@ -35,59 +35,36 @@ In this group project, we hope to develop a website to let users play the Dou Di
 ## High-level Components
 Most important components:
 - [Dashboard](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/admin/Dashboard.tsx)
+- [Poker](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/gameroom/Poker.tsx)
+- [Room](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/gameroom/Room.tsx)
+
+### Dashboard
+After successful login, the player will land on the dashboard page. The dashboard contains a narrow menu sidebar on the left and a button to create/join a room:
 - [Overview](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/admin/Overview.tsx)
+    Overview is used to show the status of creating or joining a room. 
+
 - [Profile](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/admin/Profile.tsx)
+    Profile shows the profile information including current name, username, password and repeat password to let the player have the opportunity to change his name, username and password.
+
+### Poker
+Poker shows the core functions of cards in the game, including:
+- assign the cards for each player
+- select the cards
+- change the selected cards
+- play the cards
+- pass the round
+- elect the landlord
+- get ready for the game
+- exit the room
+
+### Room
+Room shows the status of one room, including:
+- players in the room
+- sort the cards
+- show the photo of landlord and farmers
+- define the order of playing cards
+
 ## Launch & Development
-
-## Illustrations
-- Register an account
-
-  ![create an account](https://i.makeagif.com/media/5-19-2023/Ys03Ud.gif)
-![未命名的设计.gif](..%2F..%2F..%2FDownloads%2F%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E8%AE%BE%E8%AE%A1.gif)
-- Login 
-- Create a game room and Join a room
-- Initial the game
-- Play the game
-- Show the game result and exit the game room
-
-
-## Roadmap
-Potential improvements or extensions may include:
-- In the game room, users can change the music and choose their favorite music as the background music
-- The user can log in with the email. After passing the email verification, if the password is forgotten, the user can retrieve the password or change the password through the email.
-- The game ranking feature can be added
-
-## Learn More
-- To learn React, check out the [React documentation](https://reactjs.org/).
-- To learn Chakra UI, check out the [Chakra UI](https://chakra-ui.com/)
-- To learn GitHub Actions, check out the [GitHub Actions](https://docs.github.com/en/actions)
-
-## Authors & Acknowledgement
-> Jing Cao, Weimin Yang, Zhi Wang, Xiong Li
-
-## License
-Licensed under Apache License Version 2.0
-- See [License](LICENSE)
-
-
-
-------------
-
-## Getting started
-
-Read and go through these Tutorials. It will make your life easier:)
-
-- Read the React [Docs](https://reactjs.org/docs/getting-started.html)
-- Do this React [Getting Started](https://reactjs.org/tutorial/tutorial.html) Tutorial (it doesn’t assume any existing React knowledge)
-- Get an Understanding of [CSS](https://www.w3schools.com/Css/), [SCSS](https://sass-lang.com/documentation/syntax), and [HTML](https://www.w3schools.com/html/html_intro.asp)!
-
-Next, there are two other technologies that you should look at:
-
-* [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start) offers declarative routing for React. It is a collection of navigational components that fit nicely with the application. 
-* [react-hooks](https://reactrouter.com/web/api/Hooks) let you access the router's state and perform navigation from inside your components.
-
-## Prerequisites and Installation
-For your local development environment, you will need Node.js. You can download it [here](https://nodejs.org). All other dependencies, including React, get installed with:
 
 ```npm install primeicons --save```
 
@@ -113,9 +90,41 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+
+
+## Illustrations
+- Register an account
+
+<<<<<<< HEAD
+  ![create an account](https://i.makeagif.com/media/5-19-2023/Ys03Ud.gif)
+![未命名的设计.gif](..%2F..%2F..%2FDownloads%2F%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E8%AE%BE%E8%AE%A1.gif)
+=======
+![create an account](https://www.canva.com/design/DAFjYPO_j9k/qP9eP802Sm3bN3fd-JKrEQ/watch?utm_content=DAFjYPO_j9k&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+
+
+>>>>>>> 6b18e72545759931a7c59f55fe2352348f95694f
+- Login 
+- Create a game room and Join a room
+- Initial the game
+- Play the game
+- Show the game result and exit the game room
+
+
+## Roadmap
+Potential improvements or extensions may include:
+- In the game room, users can change the music and choose their favorite music as the background music
+- The user can log in with the email. After passing the email verification, if the password is forgotten, the user can retrieve the password or change the password through the email.
+- The game ranking feature can be added
+
 ## Learn More
+- To learn React, check out the [React documentation](https://reactjs.org/).
+- To learn Chakra UI, check out the [Chakra UI](https://chakra-ui.com/)
+- To learn GitHub Actions, check out the [GitHub Actions](https://docs.github.com/en/actions)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors & Acknowledgement
+> Jing Cao, Weimin Yang, Zhi Wang, Xiong Li
 
+## License
+Licensed under Apache License Version 2.0
+- See [License](LICENSE)
 
-> Thanks to Lucas Pelloni and Kyrill Hux for working on the template.
