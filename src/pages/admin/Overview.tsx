@@ -77,12 +77,11 @@ export default function Overview() {
     //const ws = new WebSocket(`ws:/doudizhu-server.oa.r.appspot.com/ws/room/sync/${adminData?.token}`);
     //const ws = new WebSocket(`${apiUrl}/ws/room/sync/${adminData?.token}`);
     // 本地跑
-    const ws = new WebSocket(`ws:/localhost:8080/ws/room/sync/${adminData?.token}`);
+    // const ws = new WebSocket(`ws:/localhost:8080/ws/room/sync/${adminData?.token}`);
     //云上跑 https://sopra-fs23-group-21-server-new.oa.r.appspot.com/
-
-    // const ws = new WebSocket(
-    //   `wss:/sopra-fs23-group-21-server-new.oa.r.appspot.com/ws/room/sync/${adminData?.token}`
-    // );
+    const ws = new WebSocket(
+      `wss:/sopra-fs23-group-21-server-new.oa.r.appspot.com/ws/room/sync/${adminData?.token}`
+    );
 
     ws.onopen = () => {
       console.log("WebSocket connected");
@@ -146,6 +145,7 @@ export default function Overview() {
       }
       as={Link}
       to=""
+      w="max-content"
     >
       room code: {room.code}
       <MdAddCircleOutline fontSize="1.5rem" />
@@ -162,6 +162,7 @@ export default function Overview() {
     color="gray.200"
     bgColor="#AC6A99"
     gridColumn="span 4"
+    w="max-content"
   >
     <MdAddCircleOutline fontSize="1.5rem" />
     create a game

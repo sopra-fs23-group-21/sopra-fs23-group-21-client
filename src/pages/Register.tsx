@@ -44,12 +44,13 @@ export default function Register() {
       >
         {(formProps: FormikProps<any>) => (
           <VStack align="end" as={Form} spacing={10} justifyContent="center">
-            <Flex justifyContent="center">
+            <Flex justifyContent="center" >
               <SimpleGrid
                 minW="max-content"
                 spacing={8}
                 columns={2}
                 bg="#AC6A99"
+                opacity={0.95}
                 boxShadow="lg"
                 rounded="3xl"
                 borderWidth={1}

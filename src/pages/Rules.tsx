@@ -17,7 +17,7 @@ export default function Rules() {
         boxShadow="md"
       >
         <Text fontSize="sm" textAlign="justify">
-1. Our poker game is a three-player game. To start the game, all three players must be online at the same time, enter the same game room, and click ready. If only one or two players are present, or if all three players are not online at the same time, the game cannot be played.<br/>
+1. Our poker game is a three-player game. To start the game, all three players must be online at the same time, enter the same game room, and click ' 准备 ready？'，the '准备 Ready?' button is unavailable until there are three players in the same game room. If only one or two players are present, or if all three players are not online at the same time, the game cannot be played.<br/>
 <br/>
 2. After finishing a game, it is best for all three players to either choose to play another round together or all choose to exit the room, instead of one player continuing while the other two choose to exit.<br/>
 <br/>

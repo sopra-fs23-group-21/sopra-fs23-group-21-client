@@ -39,6 +39,7 @@ export default function Room() {
   const [right, setRight] = useState<AdminProps | undefined>(undefined);
   //游戏阶段
   const [roomStatus, setRoomStatus] = useState(0);
+  const [numUser,setNumUser]= useState(0);
   //是否出牌
   const [isPay, setIsPay] = useState(false);
   //游戏结果
@@ -104,6 +105,7 @@ export default function Room() {
     if (data.now != undefined) {
       data.userList[data.now].status = "on";
     }
+    setNumUser(data.userList.length);
     setPokers(data.pokers);
     setResult(
       data.winner == undefined
@@ -136,8 +138,9 @@ export default function Room() {
     //const ws = new WebSocket(`ws:/doudizhu-server.oa.r.appspot.com/ws/room/sync/${adminData?.token}`);
     //const ws = new WebSocket(`${apiUrl}/ws/ddz/sync/${adminData?.token}`);
     //本地跑
-//     const ws = new WebSocket(`ws:/localhost:8080/ws/ddz/sync/${roomId}/${adminData?.token}`);
+    // const ws = new WebSocket(`ws:/localhost:8080/ws/ddz/sync/${roomId}/${adminData?.token}`);
     // 云上跑 sopra-fs23-group-21-server-new.oa.r.appspot.com
+
     const ws = new WebSocket(
       `wss:/sopra-fs23-group-21-server-new.oa.r.appspot.com/ws/ddz/sync/${roomId}/${adminData?.token}`
     );
@@ -223,7 +226,8 @@ export default function Room() {
             alignItems="center"
           >
             {result && (
-              <Text textAlign="center" w="md" color="blue.600">
+              <Text textAlign="center" w="md" color="purple" fontSize="6xl"
+                    fontWeight="bold">
                 `{result}`
               </Text>
             )}
@@ -258,6 +262,7 @@ export default function Room() {
           user={my}
           roomId={roomId}
           isPay={isPay}
+          numUser={numUser}
         />
         <MusicPlayer audioUrl={audioUrl} />
       </Box>
