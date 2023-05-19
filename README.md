@@ -93,7 +93,12 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 ## Illustrations
-- Register an account
+Register an account
+
+![register](https://i.makeagif.com/media/5-19-2023/yc9JrF.gif)
+
+
+
 - Login 
 - Create a game room and Join a room
 - Initial the game
