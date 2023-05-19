@@ -99,8 +99,11 @@ Register an account
 
 
 
-- Login 
-- Create a game room and Join a room
+- Initial the game
+
+[Initial the game](gif/initial the game.gif)
+
+
 - Initial the game
 - Play the game
 - Show the game result and exit the game room
