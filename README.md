@@ -43,7 +43,7 @@ Most important components:
 - Register an account
 
   ![create an account](https://i.makeagif.com/media/5-19-2023/Ys03Ud.gif)
-
+![未命名的设计.gif](..%2F..%2F..%2FDownloads%2F%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E8%AE%BE%E8%AE%A1.gif)
 - Login 
 - Create a game room and Join a room
 - Initial the game
