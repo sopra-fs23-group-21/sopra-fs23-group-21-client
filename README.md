@@ -94,7 +94,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Illustrations
 - Register an account
-[create an account](gif/create an account.gif)
 - Login 
 - Create a game room and Join a room
 - Initial the game
