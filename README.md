@@ -38,6 +38,7 @@ In this group project, we hope to develop a website to let users play the Dou Di
 
 ## Illustrations
 - Register an account
+  ![create an account](https://i.makeagif.com/media/5-19-2023/Ys03Ud.gif)
 - Login 
 - Create a game room and Join a room
 - Initial the game
