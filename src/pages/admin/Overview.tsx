@@ -124,14 +124,14 @@ export default function Overview() {
     <Stack
       flexGrow={1}
       justify="space-between"
-      spacing={6}
-      px={10}
-      py={6}
+      spacing={3}
+      px={2}
+      py={4}
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
       bgImage="url('/image/05b6a71c48ac19ba9097a5bb44daa7e1.png')"
     >
-      <Grid templateColumns="repeat(4, 1fr)" gap={4}>
+      <Grid templateColumns="repeat(6, 1fr)" gap={4}>
   {rooms?.map((room, index) => (
     <Button
       key={index}

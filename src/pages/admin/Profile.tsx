@@ -40,34 +40,41 @@ export default function Profile() {
       }
      put(values).then((data) => {
       if (response.ok) {
-        toast({
-          title: "Profile updated successfully!",
-          status: "success",
-          duration: 3000,
-          onCloseComplete: () => {
-              setAdminData(data.data)
-              window.location.reload()},
-        });
+        if (data.status === 200) {
+          toast({
+            title: "Profile updated successfully!",
+            status: "success",
+            duration: 3000,
+            onCloseComplete: () => {
+                setAdminData(data.data)
+                window.location.reload()},
+          });
+        } else {
+          toast({ title: data.msg, status: "error" });
+        }
+        
       } else toast({ title: data.msg, status: "error" });
     });
     }
 
 
   return (
-    <VStack flexGrow={1} p={12} spacing={5}>
+    <VStack flexGrow={1} p={12} spacing={5} backgroundRepeat="no-repeat"
+                                                  backgroundSize="cover"
+                                                  bgImage="url('/image/05b6a71c48ac19ba9097a5bb44daa7e1.png')">
       <HStack>
         <Icon
           boxSize="5rem"
           rounded="full"
           p={3}
-          bg="gray.50"
+          bg="#B578A3"
           as={AiOutlineUser}
         />
         <Heading>{adminData?.name}</Heading>
       </HStack>
-      <Formik initialValues={initialValues} onSubmit={editProfile}>
+      <Formik initialValues={initialValues} onSubmit={editProfile} >
         {(formProps: FormikProps<any>) => (
-          <VStack as={Form} spacing={8}>
+          <VStack as={Form} spacing={8} bg="gray.50" rounded="3xl">
             <Stack
               gap={5}
               minW="25vw"
@@ -85,6 +92,7 @@ export default function Profile() {
                 variant="round"
                 type="submit"
                 isLoading={formProps.isSubmitting}
+                bg="#B578A3"
               >
                 Edit
               </Button>
