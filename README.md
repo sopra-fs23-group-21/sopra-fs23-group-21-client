@@ -2,7 +2,7 @@
 ## Introduction
 
 ## Technologies
-- React: CSS, Typescript, HTML, Formik
+- React: CSS, Typescript, HTML
 - Chakra UI
 - GitHub Actions
 - REST API
