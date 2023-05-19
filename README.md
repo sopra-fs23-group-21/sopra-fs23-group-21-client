@@ -39,6 +39,13 @@ Most important components:
 ## Launch & Development
 
 ## Illustrations
+- Register an account
+- Login 
+- Create a game room and Join a room
+- Initial the game
+- Play the game
+- Show the game result and exit the game room
+
 
 ## Roadmap
 Potential improvements or extensions may include:
@@ -60,7 +67,7 @@ Licensed under Apache License Version 2.0
 
 
 
-
+------------
 
 ## Getting started
 
