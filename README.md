@@ -99,14 +99,15 @@ Register an account
 
 
 
-- Initial the game
-
-[Initial the game](gif/initial the game.gif)
+Login and Logout
 
 
-- Initial the game
-- Play the game
-- Show the game result and exit the game room
+
+Initial the game
+
+Play the game
+
+Show the result
 
 
 ## Roadmap
