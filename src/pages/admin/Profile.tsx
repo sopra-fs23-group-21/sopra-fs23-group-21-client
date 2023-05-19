@@ -29,8 +29,10 @@ export default function Profile() {
 
   const editProfile = (values: FormikValues) =>
 
-  {
-      if(values.password == null || values.username ==null || values.name ==null){
+  {   console.log("----------")
+      console.log(values)
+      console.log("----------")
+      if(values.password == null || values.username ==null || values.name ==null || values.password == ''){
           toast({ title: "the name, user name and password can not be empty",
               status: 'error',onCloseComplete: () => window.location.reload()
           })
