@@ -71,6 +71,8 @@ Room shows the status of one room, including:
 - Register an account
 
 ![create an account](https://i.makeagif.com/media/5-19-2023/Ys03Ud.gif)
+![Alt Text](https://i.makeagif.com/media/5-19-2023/Ys03Ud.gif)
+
 
 - Login 
 - Create a game room and Join a room
