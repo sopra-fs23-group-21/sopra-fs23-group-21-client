@@ -40,14 +40,19 @@ export default function Profile() {
       }
      put(values).then((data) => {
       if (response.ok) {
-        toast({
-          title: "Profile updated successfully!",
-          status: "success",
-          duration: 3000,
-          onCloseComplete: () => {
-              setAdminData(data.data)
-              window.location.reload()},
-        });
+        if (data.status === 200) {
+          toast({
+            title: "Profile updated successfully!",
+            status: "success",
+            duration: 3000,
+            onCloseComplete: () => {
+                setAdminData(data.data)
+                window.location.reload()},
+          });
+        } else {
+          toast({ title: data.msg, status: "error" });
+        }
+        
       } else toast({ title: data.msg, status: "error" });
     });
     }
