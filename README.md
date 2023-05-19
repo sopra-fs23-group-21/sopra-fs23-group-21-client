@@ -14,6 +14,7 @@
 ## Learn More
 
 ## Authors & Acknowledgement
+> Jing Cao, Weimin Yang, Zhi Wang, Xiong Li
 
 ## License
 Licensed under Apache License Version 2.0
