@@ -35,9 +35,37 @@ In this group project, we hope to develop a website to let users play the Dou Di
 ## High-level Components
 Most important components:
 - [Dashboard](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/admin/Dashboard.tsx)
+- [Poker](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/gameroom/Poker.tsx)
+- [Room](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/gameroom/Room.tsx)
+
+### Dashboard
+After successful login, the player will land on the dashboard page. The dashboard contains a narrow menu sidebar on the left and a button to create/join a room:
 - [Overview](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/admin/Overview.tsx)
+    Overview is used to show the status of creating or joining a room. 
+
 - [Profile](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/admin/Profile.tsx)
+    Profile shows the profile information including current name, username, password and repeat password to let the player have the opportunity to change his name, username and password.
+
+### Poker
+Poker shows the core functions of cards in the game, including:
+- assign the cards for each player
+- select the cards
+- change the selected cards
+- play the cards
+- pass the round
+- elect the landlord
+- get ready for the game
+- exit the room
+
+### Room
+Room shows the status of one room, including:
+- players in the room
+- sort the cards
+- show the photo of landlord and farmers
+- define the order of playing cards
+
 ## Launch & Development
+
 
 ## Illustrations
 - Register an account
