@@ -10,8 +10,14 @@
 ## Illustrations
 
 ## Roadmap
+Potential improvements or extensions may include:
+- 
+
 
 ## Learn More
+To learn React, check out the [React documentation](https://reactjs.org/).
+To learn XXX, check out the []()
+
 
 ## Authors & Acknowledgement
 > Jing Cao, Weimin Yang, Zhi Wang, Xiong Li
