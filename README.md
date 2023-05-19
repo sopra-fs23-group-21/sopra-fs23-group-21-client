@@ -94,15 +94,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Illustrations
 - Register an account
-
-<<<<<<< HEAD
-  ![create an account](https://i.makeagif.com/media/5-19-2023/Ys03Ud.gif)
-![未命名的设计.gif](..%2F..%2F..%2FDownloads%2F%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E8%AE%BE%E8%AE%A1.gif)
-=======
-![create an account](https://www.canva.com/design/DAFjYPO_j9k/qP9eP802Sm3bN3fd-JKrEQ/watch?utm_content=DAFjYPO_j9k&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
-
-
->>>>>>> 6b18e72545759931a7c59f55fe2352348f95694f
+[create an account](gif/create an account.gif)
 - Login 
 - Create a game room and Join a room
 - Initial the game
