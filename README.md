@@ -33,7 +33,10 @@ In this group project, we hope to develop a website to let users play the Dou Di
 - HTML5 Audio API
 
 ## High-level Components
-
+Most important components:
+- [Dashboard](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/admin/Dashboard.tsx)
+- [Overview](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/admin/Overview.tsx)
+- [Profile](https://github.com/sopra-fs23-group-21/sopra-fs23-group-21-client/blob/main/src/pages/admin/Profile.tsx)
 ## Launch & Development
 
 ## Illustrations
