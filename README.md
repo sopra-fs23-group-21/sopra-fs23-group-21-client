@@ -93,18 +93,21 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 ## Illustrations
-Here is a [video](https://youtu.be/L9dDTjOKUlM) on YouTube show you about our game.
+Here is a video on YouTube show you about our game.(click the image below to watch the video)
 [![Video](image-readme/homepage.jpg)](https://youtu.be/L9dDTjOKUlM)
+
 There are some screeshots of our game
-
-Home Page
-
+Home Page:
 ![Home Page](image-readme/homepage.jpg)
 
 Register an account:
+![Register](image-readme/register.png)
 
+Login:
+![Login](image-readme/login.jpg)
 
-Login 
+Update profile:
+![Update profile](image-readme/update profile.png)
 
 Initial the game
 
