@@ -93,15 +93,15 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 ## Illustrations
+Here is a video on YouTube show you about our game.
+[![IMAGE ALT TEXT HERE](https://youtu.be/L9dDTjOKUlM/0.jpg)](https://youtu.be/L9dDTjOKUlM)
+
+[//]: # (https://youtu.be/L9dDTjOKUlM)
+
+There are some screeshots of our game
 Register an account
 
-![register](https://i.makeagif.com/media/5-19-2023/yc9JrF.gif)
-
-
-
-Login and Logout
-
-
+Login 
 
 Initial the game
 
