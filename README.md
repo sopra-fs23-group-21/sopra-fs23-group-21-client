@@ -110,11 +110,27 @@ Login:
 Update profile:
 ![Update profile](image-readme/update profile.png)
 
-Initial the game
+Initial the game:
+- players click 'ready?' button
+![Initial the game](image-readme/initial game0.png)
 
-Play the game
+- players running for the 'Landlord'
+![Initial the game](image-readme/initial game.png)
 
-Show the result
+
+Play the game:
+- deal cards
+![Play the game](image-readme/play the game.png)
+
+- invaliable card combination alert
+![Play the game](image-readme/play the game1.png)
+
+- don't deal cards(Pass)
+![Play the game](image-readme/play the game2.png)
+
+
+Show the result:
+![Show the result](image-readme/show the result.png)
 
 
 ## Roadmap
