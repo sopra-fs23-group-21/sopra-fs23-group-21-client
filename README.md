@@ -108,35 +108,29 @@ Login:
 ![Login](image-readme/login.jpg)
 
 Update profile:
-![Update profile](image-readme/update profile.png)
+![Update profile](image-readme/updateprofile.png)
 
 Initial the game:
 - players click 'ready?' button
-
-![Initial the game](image-readme/initial game0.png)
+![Initial the game](image-readme/initialgame0.png)
 
 - players running for the 'Landlord'
-
-![Initial the game](image-readme/initial game.png)
+![Initial the game](image-readme/initialgame.png)
 
 
 Play the game:
 - deal cards
-
-![Play the game](image-readme/play the game.png)
+![Play the game](image-readme/playthegame.png)
 
 - invaliable card combination alert
-
-![Play the game](image-readme/play the game1.png)
+![Play the game](image-readme/playthegame1.png)
 
 - don't deal cards(Pass)
-
-![Play the game](image-readme/play the game2.png)
+![Play the game](image-readme/playthegame2.png)
 
 
 Show the result:
-
-![show the result](image-readme/show the result.png)
+![show the result](image-readme/showtheresult.png)
 
 
 
