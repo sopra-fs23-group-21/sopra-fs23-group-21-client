@@ -97,6 +97,7 @@ Here is a video on YouTube show you about our game.(click the image below to wat
 [![Video](image-readme/homepage.jpg)](https://youtu.be/L9dDTjOKUlM)
 
 There are some screeshots of our game
+
 Home Page:
 ![Home Page](image-readme/homepage.jpg)
 
