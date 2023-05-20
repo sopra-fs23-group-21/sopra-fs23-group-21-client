@@ -130,6 +130,7 @@ Play the game:
 
 
 Show the result:
+![show the result](image-readme/show the result.png)
 ![Show the result](image-readme/show the result.png)
 
 
