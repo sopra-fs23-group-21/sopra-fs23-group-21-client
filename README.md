@@ -93,8 +93,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 ## Illustrations
-Here is a video on YouTube show you about our game.
-[![IMAGE ALT TEXT HERE](https://youtu.be/L9dDTjOKUlM/0.jpg)](https://youtu.be/L9dDTjOKUlM)
+Here is a [video](https://youtu.be/L9dDTjOKUlM) on YouTube show you about our game.
+
+[//]: # ([![IMAGE ALT TEXT HERE]&#40;https://youtu.be/L9dDTjOKUlM/0.jpg&#41;]&#40;&#41;)
 
 [//]: # (https://youtu.be/L9dDTjOKUlM)
 
