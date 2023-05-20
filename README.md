@@ -94,12 +94,12 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Illustrations
 Here is a [video](https://youtu.be/L9dDTjOKUlM) on YouTube show you about our game.
-
+[![Video](image-readme/homepage.jpg)](https://youtu.be/L9dDTjOKUlM)
 There are some screeshots of our game
+
 Home Page
+
 ![Home Page](image-readme/homepage.jpg)
-
-
 
 Register an account:
 
