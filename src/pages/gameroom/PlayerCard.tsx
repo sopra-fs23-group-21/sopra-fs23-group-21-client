@@ -28,7 +28,7 @@ export default function PlayerCard({user}:{user:AdminProps}){
                 </Text>
                 {
                     user.isContinue &&
-                    <Text fontSize="md">
+                    <Text fontSize="md" color="white">
                         Already Ready!
                     </Text>
                 }
