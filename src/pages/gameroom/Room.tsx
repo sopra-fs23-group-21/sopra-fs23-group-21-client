@@ -302,26 +302,42 @@ export default function Room() {
           <ModalHeader>Game Role</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <p>1. Our poker game is a three-player game. To start the game, all three players must be online at the same time, enter the same game room, and click ' 准备 ready？'，the '准备 Ready?' button is unavailable until there are three players in the same game room. If only one or two players are present, or if all three players are not online at the same time, the game cannot be played.
-            </p>
-            <p>2. After finishing a game, it is best for all three players to either choose to play another round together or all choose to exit the room, instead of one player continuing while the other two choose to exit.
-            </p>
-            <p>3. The rules of the game "Doudizhu" are relatively complicated: In short, this is a team-based game, with two farmers as one team and the landlord as the other team. Whoever plays all their cards first wins, and as long as one of the farmers plays all the cards first, the farmers win.
-            </p>
-            <p>4. At the beginning of the game, the three players can compete to become the landlord. Each player is randomly dealt 17 cards, and an additional three cards are given to the player who successfully becomes the landlord. Therefore, each farmer has 17 cards, while the landlord has 20 cards and can play first.
-            </p>
-            <p>5. The types of cards include single cards (A), double cards (AA), three cards with one (AAA+6), three cards with two (AAA+66), four cards (AAAA), consecutive cards (4-5-6-7-8), consecutive double cards (44-55-66), consecutive three cards (444-555), consecutive three cards with one (444-555-7-9), and the pair of jokers (red joker + black joker).
-            </p>
-            <p>6. In "Doudizhu", the card values are as follows: 3 &lt; 4 &lt; 5 &lt; 6 &lt; 7 &lt; 8 &lt; 9 &lt; 10 &lt; J &lt; Q &lt; K &lt; A &lt; 2 &lt; RED JOKER &lt; BLACK JOKER. The size relationship between card combinations is as follows: single cards(A), double cards(AA), three cards(AAA), three cards with one(222+6), three cards with two(JJJ+K), consecutive single cards(10-J-Q-K-A, note:at least 5 cards), consecutive double cards(JJ-QQ-KK,at least 3 cards combination), consecutive three cards(888-999, at least 2 card combination), consecutive three cards with one(QQQ-KKK-2-5) are all at the same level. This means that single cards can only be played against single cards, double cards can only be played against double cards, and other card combinations can only be compared within their respective card combinations. For example, if the landlord plays a 3, the farmers can play a 6, but not a 66. If the landlord plays 3-4-5-6-7, the farmers can play 4-5-6-7-8, but not any other card combinations. Four cards is a kind is a special card combination that was not mentioned earlier, as it is higher than any other card combination. Four cards can be played against any other card combination. For example, 3333 is the lowest value of four cards, but it can beat 4-5-6-7-8 and KKK-AAA-4-7. The most special card combination is the pair of jokers. The red joker and black joker can beat any card combination, including the highest four cards, which is 2222.
-              </p>
-            <p>7. For more details on "Landlord," you can search for it on Wikipedia at https://en.wikipedia.org/wiki/Dou_dizhu.
-            </p>
-            <p>8. Finally, when the game finishes, everyone need to click on "Quit Room" - This is very important!!!</p>
-
+            <p>1. READY: </p><p>Doudi Zhu is a three-player poker game.  The '准备 Ready?' button is unavailable until there are three online players in the same game room. If you can't start the game, please remember to click to '退出房间 Exit the room'.
+            </p><hr></hr>
+            <p>2. RUNNING FOR LANDLORD: </p><p>At the beginning, each player gets 17 cards. By clicking on 'Running for the landlord' button, players can get additional three cards and landlord identity. If multiple players click on the landlord button, the first choosing player is the landlord. The landlord can play cards first. The other two players(farmers) are the teammates.
+            </p><hr></hr>
+            <p>3. RESULT: </p><p>Doudi Zhu is a team-based game. Whoever plays all their cards first wins, and as long as one of the farmers plays all the cards first, the farmers win.
+            </p><hr></hr>
+            <p>4. POKER COMBINATION: </p><p>Lower Level: Single cards (A), Double cards (AA), Three cards with one (AAA+6), Three cards with two (AAA+66), Consecutive single cards (4-5-6-7-8), Consecutive double cards (44-55-66), Consecutive three cards (444-555), Consecutive three cards with one (444-555-7-9) [Notes: These poker combination can only be played against themselves]. </p><p> High Level: Four cards (AAAA), Double Jokers [They are higher than any other card combination.]
+            </p><hr></hr>
+            <p>5. SINGLE CARD: 3 &lt; 4 &lt; 5 &lt; 6 &lt; 7 &lt; 8 &lt; 9 &lt; 10 &lt; J &lt; Q &lt; K &lt; A &lt; 2 &lt; RED JOKER &lt; BLACK JOKER &lt; Four cards &lt; Double Jokers
+            </p><hr></hr>
+            <p>6. DOUBLE CARDS: 33 &lt; 44 &lt; 55 &lt; 66 &lt; 77 &lt; 88 &lt; 99 &lt; 1010 &lt; JJ &lt; QQ &lt; KK &lt; AA &lt; 22 &lt; Four cards &lt; Double Jokers
+            </p><hr></hr>
+            <p>7. THREE CARDS: 333 &lt; 444 &lt; 555 &lt; 666 &lt; 777 &lt; 888 &lt; 999 &lt; 101010 &lt; JJJ &lt; QQQ &lt; KKK &lt; AAA &lt; 222 &lt; Four cards &lt; Double Jokers
+            </p><hr></hr>
+            <p>8. THREE CARDS WITH ONE: 333+9 &lt; KKK+5 &lt; Four cards &lt; Double Jokers; [Only compare the first three cards]
+            </p><hr></hr>
+            <p>9. THREE CARDS WITH TWO: 444+88 &lt; 222+55 &lt; Four cards &lt; Double Jokers; [Only compare the first three cards]
+            </p><hr></hr>
+            <p>10. Consecutive Single Cards: 3-4-5-6-7 &lt; 10-J-Q-K-A &lt; Four cards &lt; Double Jokers; [Note:Exclude 2 and Joker; At least 5 cards]
+            </p><hr></hr>
+            <p>11. Consecutive Double Cards: 33-44-55 &lt; QQ-KK-AA &lt; Four cards &lt; Double Jokers; [Note:Exclude 2 and Joker; At least 3 cards]
+            </p><hr></hr>
+            <p>12. Consecutive Three Cards: 333-444 &lt; KKK-AAA &lt; Four cards &lt; Double Jokers; [Note:Exclude 2 and Joker; At least 2 cards]
+            </p><hr></hr>
+            <p>13. Consecutive Three Cards With One: 333-444-7-J &lt; KKK-AAA-5-6 &lt; Four cards &lt; Double Jokers;   [Note:The Consecutive Three Cards Parts exclude 2 and Joker; The Consecutive Three Cards Parts have at least 2 cards]
+            </p><hr></hr>
+            <p>14. Four Cards: Lower level Card Combination(above 5~13) &lt;3333 &lt; AAAA &lt; 2222 &lt; Double Jokers
+            </p><hr></hr>
+            <p>15. Double Jokers: Lower level Card Combination(above 5~13) &lt; Four Cards &lt; Double Jokers(Red Joker+Black Joker)
+            </p><hr></hr>
+            <p>16. After finishing a game, three players choose to play another round together or all choose to exit the room, instead of one player continuing while the other two choose to exit!!!
+            </p><hr></hr>
           </ModalBody>
           <ModalFooter>
             <Button colorScheme="blue" mr={3} onClick={handleClose}>
-              关闭
+              CLOSE
             </Button>
 
           </ModalFooter>
