@@ -303,37 +303,47 @@ export default function Room() {
           <ModalCloseButton />
           <ModalBody>
             <p>1. READY: </p><p>Doudi Zhu is a three-player poker game.  The '准备 Ready?' button is unavailable until there are three online players in the same game room. If you can't start the game, please remember to click to '退出房间 Exit the room'.
-            </p><hr></hr>
+            <p>After finishing a game, three players choose to play another round together or all choose to exit the room, instead of one player continuing while the other two choose to exit!!!
+            </p></p>
+
             <p>2. RUNNING FOR LANDLORD: </p><p>At the beginning, each player gets 17 cards. By clicking on 'Running for the landlord' button, players can get additional three cards and landlord identity. If multiple players click on the landlord button, the first choosing player is the landlord. The landlord can play cards first. The other two players(farmers) are the teammates.
-            </p><hr></hr>
+            </p>
+
             <p>3. RESULT: </p><p>Doudi Zhu is a team-based game. Whoever plays all their cards first wins, and as long as one of the farmers plays all the cards first, the farmers win.
+            </p><hr></hr><br></br>
+
+            <p>POKER COMBINATION: </p><p>Double Jokers &gt; Four Cards &gt; Other Card Combination</p>
+            <p> Level 1(High): Four cards (AAAA), Double Jokers [They are higher than any other card combination.]
+            </p><p>Level 2(Low): Single cards (A), Double cards (AA), Three cards with one (AAA+6), Three cards with two (AAA+66), Consecutive single cards (4-5-6-7-8), Consecutive double cards (44-55-66), Consecutive three cards (444-555), Consecutive three cards with one (444-555-7-9) [Notes: These poker combination can only be played against themselves].
+            </p><hr></hr><br></br>
+
+            <p>Level 1</p><hr></hr>
+            <p>Four Cards: Level 2 Card Combination &lt;3333 &lt; AAAA &lt; 2222 &lt; Double Jokers
+            </p>
+            <p>Double Jokers: Level 2 Card Combination &lt; Four Cards &lt; Double Jokers(Red Joker+Black Joker)
+            </p><br></br>
+
+            <p>Level 2</p><hr></hr>
+            <p>1. SINGLE CARD: 3 &lt; 4 &lt; 5 &lt; 6 &lt; 7 &lt; 8 &lt; 9 &lt; 10 &lt; J &lt; Q &lt; K &lt; A &lt; 2 &lt; RED JOKER &lt; BLACK JOKER &lt; Four cards &lt; Double Jokers
+            </p>
+            <p>2. DOUBLE CARDS: 33 &lt; 44 &lt; 55 &lt; 66 &lt; 77 &lt; 88 &lt; 99 &lt; 1010 &lt; JJ &lt; QQ &lt; KK &lt; AA &lt; 22 &lt; Four cards &lt; Double Jokers
+            </p>
+            <p>3. THREE CARDS: 333 &lt; 444 &lt; 555 &lt; 666 &lt; 777 &lt; 888 &lt; 999 &lt; 101010 &lt; JJJ &lt; QQQ &lt; KKK &lt; AAA &lt; 222 &lt; Four cards &lt; Double Jokers
+            </p>
+            <p>4. THREE CARDS WITH ONE: 333+9 &lt; KKK+5 &lt; Four cards &lt; Double Jokers; [Only compare the first three cards]
+            </p>
+            <p>5. THREE CARDS WITH TWO: 444+88 &lt; 222+55 &lt; Four cards &lt; Double Jokers; [Only compare the first three cards]
+            </p>
+            <p>6. Consecutive Single Cards: 3-4-5-6-7 &lt; 10-J-Q-K-A &lt; Four cards &lt; Double Jokers; [Note:Exclude 2 and Joker; At least 5 cards]
+            </p>
+            <p>7. Consecutive Double Cards: 33-44-55 &lt; QQ-KK-AA &lt; Four cards &lt; Double Jokers; [Note:Exclude 2 and Joker; At least 3 cards]
+            </p>
+            <p>8. Consecutive Three Cards: 333-444 &lt; KKK-AAA &lt; Four cards &lt; Double Jokers; [Note:Exclude 2 and Joker; At least 2 cards]
+            </p>
+            <p>9. Consecutive Three Cards With One: 333-444-7-J &lt; KKK-AAA-5-6 &lt; Four cards &lt; Double Jokers;   [Note:The Consecutive Three Cards Parts exclude 2 and Joker; The Consecutive Three Cards Parts have at least 2 cards]
             </p><hr></hr>
-            <p>4. POKER COMBINATION: </p><p>Lower Level: Single cards (A), Double cards (AA), Three cards with one (AAA+6), Three cards with two (AAA+66), Consecutive single cards (4-5-6-7-8), Consecutive double cards (44-55-66), Consecutive three cards (444-555), Consecutive three cards with one (444-555-7-9) [Notes: These poker combination can only be played against themselves]. </p><p> High Level: Four cards (AAAA), Double Jokers [They are higher than any other card combination.]
-            </p><hr></hr>
-            <p>5. SINGLE CARD: 3 &lt; 4 &lt; 5 &lt; 6 &lt; 7 &lt; 8 &lt; 9 &lt; 10 &lt; J &lt; Q &lt; K &lt; A &lt; 2 &lt; RED JOKER &lt; BLACK JOKER &lt; Four cards &lt; Double Jokers
-            </p><hr></hr>
-            <p>6. DOUBLE CARDS: 33 &lt; 44 &lt; 55 &lt; 66 &lt; 77 &lt; 88 &lt; 99 &lt; 1010 &lt; JJ &lt; QQ &lt; KK &lt; AA &lt; 22 &lt; Four cards &lt; Double Jokers
-            </p><hr></hr>
-            <p>7. THREE CARDS: 333 &lt; 444 &lt; 555 &lt; 666 &lt; 777 &lt; 888 &lt; 999 &lt; 101010 &lt; JJJ &lt; QQQ &lt; KKK &lt; AAA &lt; 222 &lt; Four cards &lt; Double Jokers
-            </p><hr></hr>
-            <p>8. THREE CARDS WITH ONE: 333+9 &lt; KKK+5 &lt; Four cards &lt; Double Jokers; [Only compare the first three cards]
-            </p><hr></hr>
-            <p>9. THREE CARDS WITH TWO: 444+88 &lt; 222+55 &lt; Four cards &lt; Double Jokers; [Only compare the first three cards]
-            </p><hr></hr>
-            <p>10. Consecutive Single Cards: 3-4-5-6-7 &lt; 10-J-Q-K-A &lt; Four cards &lt; Double Jokers; [Note:Exclude 2 and Joker; At least 5 cards]
-            </p><hr></hr>
-            <p>11. Consecutive Double Cards: 33-44-55 &lt; QQ-KK-AA &lt; Four cards &lt; Double Jokers; [Note:Exclude 2 and Joker; At least 3 cards]
-            </p><hr></hr>
-            <p>12. Consecutive Three Cards: 333-444 &lt; KKK-AAA &lt; Four cards &lt; Double Jokers; [Note:Exclude 2 and Joker; At least 2 cards]
-            </p><hr></hr>
-            <p>13. Consecutive Three Cards With One: 333-444-7-J &lt; KKK-AAA-5-6 &lt; Four cards &lt; Double Jokers;   [Note:The Consecutive Three Cards Parts exclude 2 and Joker; The Consecutive Three Cards Parts have at least 2 cards]
-            </p><hr></hr>
-            <p>14. Four Cards: Lower level Card Combination(above 5~13) &lt;3333 &lt; AAAA &lt; 2222 &lt; Double Jokers
-            </p><hr></hr>
-            <p>15. Double Jokers: Lower level Card Combination(above 5~13) &lt; Four Cards &lt; Double Jokers(Red Joker+Black Joker)
-            </p><hr></hr>
-            <p>16. After finishing a game, three players choose to play another round together or all choose to exit the room, instead of one player continuing while the other two choose to exit!!!
-            </p><hr></hr>
+            <p>More Details: https://www.youtube.com/watch?v=HOWevyidlXk</p>
+
           </ModalBody>
           <ModalFooter>
             <Button colorScheme="blue" mr={3} onClick={handleClose}>
