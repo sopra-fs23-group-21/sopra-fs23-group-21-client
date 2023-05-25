@@ -145,9 +145,10 @@ export default function Room() {
     //const apiUrl = process.env.REACT_SOCKET_API_URL;
     //const ws = new WebSocket(`ws:/doudizhu-server.oa.r.appspot.com/ws/room/sync/${adminData?.token}`);
     //const ws = new WebSocket(`${apiUrl}/ws/ddz/sync/${adminData?.token}`);
-    //本地跑
+    //Local Run:
     // const ws = new WebSocket(`ws:/localhost:8080/ws/ddz/sync/${roomId}/${adminData?.token}`);
-    // 云上跑 sopra-fs23-group-21-server-new.oa.r.appspot.com
+    //Google Cloud Run:
+    // sopra-fs23-group-21-server-new.oa.r.appspot.com
 
     const ws = new WebSocket(
       `wss:/sopra-fs23-group-21-server-new.oa.r.appspot.com/ws/ddz/sync/${roomId}/${adminData?.token}`
