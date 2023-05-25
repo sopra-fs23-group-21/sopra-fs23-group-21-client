@@ -29,8 +29,10 @@ In this group project, we hope to develop a website to let users play the Dou Di
 - React: CSS, Typescript, HTML
 - Chakra UI
 - GitHub Actions
+- Google Cloud
 - REST API
 - HTML5 Audio API
+
 
 ## High-level Components
 Most important components:
@@ -74,7 +76,8 @@ Run this command before you start your application for the first time. Next, you
 
 ```npm run dev```
 
-Now you can open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If you want to run it in local machine, please change the Line149 in src/pages/gameroom/Room.tsx and Line80 in src/pages/admin/Overview.tsx
+If you want to run it in Google Cloud, just open the link: https://sopra-fs23-group-21-client-new.oa.r.appspot.com/
 
 Notice that the page will reload if you make any edits. You will also see any lint errors in the console (use Google Chrome).
 
